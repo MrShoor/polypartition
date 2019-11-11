@@ -95,11 +95,11 @@ class TPPLPoly {
         TPPLPoly& operator=(const TPPLPoly &src);
         
         //getters and setters
-        long GetNumPoints() {
+        long GetNumPoints() const {
             return numpoints;
         }
         
-        bool IsHole() {
+        bool IsHole() const {
             return hole;
         }
         
@@ -107,15 +107,15 @@ class TPPLPoly {
             this->hole = hole;
         }
         
-        TPPLPoint &GetPoint(long i) {
+        TPPLPoint &GetPoint(long i) const {
             return points[i];
         }
         
-        TPPLPoint *GetPoints() {
+        TPPLPoint *GetPoints() const {
             return points;
         }
         
-        TPPLPoint& operator[] (int i) {
+        TPPLPoint& operator[] (int i) const {
             return points[i];
         }
         
